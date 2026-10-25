@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "name": "Nthabi",
+      "surname": "Tau",
+      "email": "nthabitau@gmail.com",
+      "cellNumber": "073 456 7892",
+      "password": "nthabi@2002",
+      "id": "nf_ZSXnMw9c"
+    },
+    {
+      "name": "Princess",
+      "surname": "Sizane",
+      "email": "princess@gmail.com",
+      "cellNumber": "082 345 3456",
+      "password": "@PSizane23",
+      "id": "M6B1RwatfgY"
+    }
+  ],
+  "lists": [
+    {
+      "name": "Toiletries",
+      "userId": "nf_ZSXnMw9c",
+      "createdAt": "2026-10-24T23:08:40.489Z",
+      "id": "MgalwZ7M3po"
+    },
+    {
+      "name": "Grocery",
+      "userId": "nf_ZSXnMw9c",
+      "createdAt": "2026-10-25T18:21:41.120Z",
+      "id": "yN8fNGDmpdM"
+    },
+    {
+      "name": "Braai list",
+      "userId": "M6B1RwatfgY",
+      "createdAt": "2026-10-25T18:32:37.052Z",
+      "id": "gl3kLZTQxyg"
+    }
+  ],
+  "items": [
+    {
+      "listId": "yN8fNGDmpdM",
+      "name": "Pap",
+      "quantity": 1,
+      "purchased": false,
+      "id": "_c7NPIiNDdU"
+    },
+    {
+      "listId": "yN8fNGDmpdM",
+      "name": "Wors",
+      "quantity": 1,
+      "purchased": false,
+      "id": "GHHL9x38f8E"
+    },
+    {
+      "listId": "yN8fNGDmpdM",
+      "name": "Eggs",
+      "quantity": 1,
+      "purchased": false,
+      "id": "LkPir-yfXoE"
+    },
+    {
+      "listId": "yN8fNGDmpdM",
+      "name": "Pork ribs",
+      "quantity": 1,
+      "purchased": true,
+      "id": "8Q6q_nogd5E"
+    },
+    {
+      "listId": "gl3kLZTQxyg",
+      "name": "Tomatoes",
+      "quantity": 1,
+      "purchased": false,
+      "id": "8k70ImR4Kjs"
+    },
+    {
+      "listId": "gl3kLZTQxyg",
+      "name": "Onion",
+      "quantity": 1,
+      "purchased": false,
+      "id": "BvC8No3Ftg8"
+    },
+    {
+      "listId": "gl3kLZTQxyg",
+      "name": "Charcoal",
+      "quantity": 1,
+      "purchased": false,
+      "id": "9JYUzH9eg_Q"
+    },
+    {
+      "listId": "gl3kLZTQxyg",
+      "name": "Pap",
+      "quantity": 1,
+      "purchased": true,
+      "id": "hrBp8zILJNI"
+    },
+    {
+      "listId": "gl3kLZTQxyg",
+      "name": "Spice",
+      "quantity": 5,
+      "purchased": true,
+      "id": "Xkr5grad1HY"
+    },
+    {
+      "listId": "gl3kLZTQxyg",
+      "name": "cooking Oil 2L",
+      "quantity": 1,
+      "purchased": true,
+      "id": "R49oMCvyQNo"
+    }
+  ],
+  "shares": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
