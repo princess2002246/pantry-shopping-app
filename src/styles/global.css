@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #25382d;
+  background: #f8f7f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #f8f7f2;
+}
+
+.auth-panel {
+  display: flex;
+  flex-direction: column;
+  padding: 32px clamp(24px, 6vw, 88px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  color: #fff;
+  background: #315b43;
+  font-family: 'Playfair Display', serif;
+}
+
+.auth-content {
+  width: 100%;
+  max-width: 440px;
+  margin: auto;
+  padding: 48px 0;
+}
+
+.eyebrow,
+.visual-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #52765c;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: clamp(34px, 4vw, 49px);
+  line-height: 1.15;
+  margin: 16px 0;
+}
+
+.subtitle {
+  color: #788078;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+form,
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  gap: 18px;
+}
+
+label {
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+input:not([type='checkbox']) {
+  width: 100%;
+  min-height: 47px;
+  padding: 12px 14px;
+  border: 1px solid #dedfd6;
+  border-radius: 5px;
+  outline: none;
+  background: #fffefa;
+  color: #25382d;
+  font-size: 13px;
+}
+
+input:focus {
+  border-color: #315b43;
+  box-shadow: 0 0 0 3px #315b4318;
+}
+
+input::placeholder {
+  color: #a0a39a;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.checkbox-label {
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  color: #69736a;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.checkbox-label input {
+  accent-color: #315b43;
+}
+
+.primary-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 49px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 5px;
+  background: #315b43;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.primary-button:hover {
+  background: #244632;
+}
+
+.primary-button:active {
+  transform: scale(0.99);
+}
+
+.switch-page {
+  margin-top: 24px;
+  text-align: center;
+  color: #7b8179;
+  font-size: 12px;
+}
+
+.text-button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #315b43;
+  font-weight: 700;
+}
+
+.text-button:hover {
+  text-decoration: underline;
+}
+
+.footer-note {
+  color: #8a9086;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.visual-panel {
+position: relative;
+display: flex;
+align-items: flex-end;
+min-height: 100vh;
+padding: clamp(28px, 5vw, 70px);
+overflow: hidden;
+background:
+linear-gradient(
+0deg,
+rgba(17, 37, 24, 0.88),
+rgba(17, 37, 24, 0.05) 85%
+),
+url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=85')
+center / cover no-repeat;
+}
+
+.visual-overlay {
+  max-width: 430px;
+  color: white;
+}
+
+.visual-tag {
+  color: #d9e2c9;
+}
+
+.visual-overlay h2 {
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.15;
+  margin: 18px 0;
+}
+
+.visual-overlay p {
+  max-width: 350px;
+  color: #e0e6dc;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .auth-page {
+    grid-template-columns: 1fr;
+  }
+
+.auth-panel {
+    min-height: 100vh;
+    padding: 24px;
+  }
+
+.auth-content {
+    max-width: 480px;
+    padding: 50px 0;
+  }
+
+.visual-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-panel {
+    padding: 22px 18px;
+  }
+
+.form-row {
+    grid-template-columns: 1fr;
+  }
+
+h1 {
+    font-size: 35px;
+  }
+}
